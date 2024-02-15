@@ -41,4 +41,5 @@ PARSED=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g' | eval echo "$(cat
 # from the container itself.
 printf "\033[1m\033[33mhiSimon:)@hihihi~ \033[0m%s\n" "$PARSED"
 # shellcheck disable=SC2086
+su container
 exec env ${PARSED}
