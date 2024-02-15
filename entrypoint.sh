@@ -45,4 +45,4 @@ echo "-----------------------------"
 echo "USERRRR"
 echo $USER
 echo "-----------------------------"
-exec env ${PARSED}
+exec env -itd ${PARSED}
